@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: flask-BDML-deployment
+  name: flask-dbml-deployment
   labels:
     app: flask
 spec:
@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
       - name: flask
-        image: localhost:32000/flask-BDML-docker-image:latest
+        image: localhost:32000/flask-bdml-docker-image:latest
         ports:
         - containerPort: 8080
